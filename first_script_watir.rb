@@ -1,4 +1,5 @@
 require 'watir-webdriver'
+#require 'watir'
 require 'selenium-webdriver'
 
 #caps = Selenium::WebDriver::Remote::Capabilities.chrome("goog:chromeOptions" => {detach: true})
@@ -15,6 +16,11 @@ sleep 1
 group = browser.div(class: 'c-plans-overview__container')
 if(group.exists?)
 	browser.execute_script('arguments[0].scrollIntoView();', group)
+end
+
+cardTitle = browser.h3(id: 'card-title-0-130-Fibre-300-front')
+if cardTitle.exists?
+	puts cardTitle.text
 end
 
 puts browser.title

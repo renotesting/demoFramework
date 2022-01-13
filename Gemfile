@@ -7,5 +7,6 @@ gem 'selenium-webdriver', '4.1.0'
 gem 'cucumber', '7.1.0'
 gem 'minitest', '~> 5.15'
 gem 'rspec', '~> 3.10'
+gem 'crack', '~> 0.4.3'
 
 

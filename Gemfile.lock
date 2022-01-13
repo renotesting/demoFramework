@@ -3,6 +3,8 @@ GEM
   specs:
     builder (3.2.4)
     childprocess (4.1.0)
+    crack (0.4.5)
+      rexml
     cucumber (7.1.0)
       builder (~> 3.2, >= 3.2.4)
       cucumber-core (~> 10.1, >= 10.1.0)
@@ -74,6 +76,7 @@ PLATFORMS
   x86_64-darwin-20
 
 DEPENDENCIES
+  crack (~> 0.4.3)
   cucumber (= 7.1.0)
   json (= 2.6.1)
   minitest (~> 5.15)

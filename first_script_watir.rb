@@ -4,7 +4,6 @@ require 'selenium-webdriver'
 
 #caps = Selenium::WebDriver::Remote::Capabilities.chrome("goog:chromeOptions" => {detach: true})
 browser =  Watir::Browser.new #:chrome, desired_capabilities: caps
-#browser.goto 'watir.com'
 browser.goto 'www.shaw.ca'
 browser.driver.manage.window.maximize
 
@@ -26,5 +25,4 @@ end
 puts browser.title
 
 sleep 5
-# => 'Guides – Watir Project'
 #browser.close
